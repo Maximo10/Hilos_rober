@@ -17,7 +17,7 @@ public class Main {
         Usuario user7 = new Usuario("Usuario7");
         Usuario user8 = new Usuario("Usuario8");
 
-        // Asignamos usuarios a cada cajero
+        // Asignar usuario a cada cajero
         cajaA.add(user1);
         cajaA.add(user2);
         cajaA.add(user3);
@@ -28,7 +28,7 @@ public class Main {
         cajaB.add(user7);
         cajaB.add(user8);
 
-        // Creamos los cajeros (ahora son hilos directamente)
+        // Crear los cajeros
         Cajero cajeroA = new Cajero("Cajero A", cajaA);
         Cajero cajeroB = new Cajero("Cajero B", cajaB);
 
