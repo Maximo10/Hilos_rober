@@ -14,11 +14,11 @@ public class Cajero extends Thread {
 
     @Override
     public void run() {
-        System.out.println(nombreCajero + " empieza a atender...");
+        System.out.println(nombreCajero + " empieza a atender...\n");
 
         // Recorremos cada cliente en la lista
         for (Usuario cliente : clientes) {
-            System.out.println(nombreCajero + " atiende a " + cliente.getNombre()+"______________________");
+            System.out.println(nombreCajero + " atiende a " + cliente.getNombre()+"\n");
             try {
                 // Simula que atender a un cliente tarda 3 segundos
                 Thread.sleep(3000);
@@ -26,7 +26,7 @@ public class Cajero extends Thread {
                 // Si el hilo se interrumpe mientras duerme, cae aquí
                 e.printStackTrace();
             }
-            System.out.println(nombreCajero + " terminó con " + cliente.getNombre()+"**************************");
+            System.out.println(nombreCajero + " terminó con " + cliente.getNombre()+"\n");
         }
 
         System.out.println(nombreCajero + " ha terminado con todos sus clientes.\n");
