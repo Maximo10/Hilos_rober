@@ -43,13 +43,3 @@ public class Main {
         System.out.println("Todos los cajeros han terminado de atender.");
     }
 }
-/*codo1.start();
-        .join() sirve de control para permitir que 2 comience en el momoento que 1 termine
-        codo1.join();
-        codo2.start();
-        codo2.join();
-        codo3.start();
-        codo3.join();
-        codo4.start();
-        codo4.join();
-        codo5.start();*/
